@@ -16,4 +16,7 @@ export default defineConfig({
       },
     }),
   ],
+  ssr: {
+    noExternal: ["@prisma/client", "@prisma/extension-accelerate"],
+  },
 });
