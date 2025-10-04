@@ -6,7 +6,7 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "remix build",
+    "build": "prisma generate && remix build",
     "dev": "remix dev",
     "start": "remix-serve build/index.js",
     "typecheck": "tsc",
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@prisma/client": "^5.7.1",
+    "@prisma/extension-accelerate": "^2.0.2",
     "@remix-run/node": "^2.16.7",
     "@remix-run/react": "^2.16.7",
     "@remix-run/serve": "^2.16.7",

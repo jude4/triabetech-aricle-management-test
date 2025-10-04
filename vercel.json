@@ -3,5 +3,10 @@
     "outputDirectory": "build",
     "framework": "remix",
     "installCommand": "npm install",
-    "devCommand": "npm run dev"
+    "devCommand": "npm run dev",
+    "functions": {
+        "app/root.tsx": {
+            "runtime": "nodejs18.x"
+        }
+    }
 }
